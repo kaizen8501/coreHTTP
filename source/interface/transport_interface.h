@@ -187,7 +187,10 @@
  * This context is passed into the network interface functions.
  */
 /* @[define_networkcontext] */
-struct NetworkContext;
+struct NetworkContext
+{
+    int socketDescriptor;
+};
 typedef struct NetworkContext NetworkContext_t;
 /* @[define_networkcontext] */
 
